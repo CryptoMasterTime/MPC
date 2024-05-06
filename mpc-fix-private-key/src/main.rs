@@ -32,7 +32,7 @@ fn recover_string(first_part: &str, second_part: &str, first_part_index: usize, 
         },
         (2, 3) => {
             let mut result = second_part[0..15].to_string();
-            result.push_str(second_part);
+            result.push_str(first_part);
             result
         },
         (1, 3) => {
