@@ -23,74 +23,89 @@ This example is provided by CryptoMasterTime.
 
 Test Data:
 
-Random hex string: 6eddc14354016438095273727ba6d3d32f78aab7
+Random hex string: 813a82e4ac558e001f54b859620358242ff23c32
 
-First part: 6eddc14354016438095273727ba6d3
+First part: 813a82e4ac558e001f54b859620358
+Second part: 01f54b859620358242ff23c32
+Third part: 813a82e4ac558e0242ff23c32
 
-Second part: 8095273727ba6d3d32f78aab7
+{
+First part: 813a82e4ac558e001f54b859620358
 
-Third part: 6eddc1435401643d32f78aab7
+Second part: 01f54b859620358242ff23c32
 
-
-
-[
-First part: 6eddc14354016438095273727ba6d3
-
-Second part: 8095273727ba6d3d32f78aab7
-
-Recovered string: 6eddc14354016438095273727ba6d3d32f78aab7
-]
+Recovered string: 813a82e4ac558e001f54b859620358242ff23c32
+}
 
 
-[
-Second part: 8095273727ba6d3d32f78aab7
 
-Third part: 6eddc1435401643d32f78aab7
+{
+Second part: 01f54b859620358242ff23c32
 
-Recovered string: 6eddc14354016436eddc1435401643d32f78aab7
-]
+Third part: 813a82e4ac558e0242ff23c32
 
-[
-First part: 6eddc14354016438095273727ba6d3
+Recovered string: 813a82e4ac558e001f54b859620358242ff23c32
+}
 
-Third part: 6eddc1435401643d32f78aab7
 
-Recovered string: 6eddc14354016438095273727ba6d3d32f78aab7
-]
 
-=============================================================
+{
+First part: 813a82e4ac558e001f54b859620358
 
-Finished dev [unoptimized + debuginfo] target(s) in 5.55s
-     Running `target/debug/mpc-fix-private-key`
+Third part: 813a82e4ac558e0242ff23c32
 
-Random hex string: f5af901a93521fc40264304ddf789b13a2f84120
+Recovered string: 813a82e4ac558e001f54b859620358242ff23c32
+}
 
-First part: f5af901a93521fc40264304ddf789b
 
-Second part: 40264304ddf789b13a2f84120
 
-Third part: f5af901a93521fc13a2f84120
 
-[
-First part: f5af901a93521fc40264304ddf789b
+---
 
-Second part: 40264304ddf789b13a2f84120
+Random hex string: 7268f98d872b93e85acbd6d9397c81f480255427
 
-Recovered string: f5af901a93521fc40264304ddf789b13a2f84120
-]
+First part: 7268f98d872b93e85acbd6d9397c81
+Second part: 85acbd6d9397c81f480255427
+Third part: 7268f98d872b93ef480255427
 
-[
-Second part: 40264304ddf789b13a2f84120
+{
+First part: 7268f98d872b93e85acbd6d9397c81
 
-Third part: f5af901a93521fc13a2f84120
+Second part: 85acbd6d9397c81f480255427
 
-Recovered string: f5af901a93521fcf5af901a93521fc13a2f84120
-]
+Recovered string: 7268f98d872b93e85acbd6d9397c81f480255427
+}
 
-[
-First part: f5af901a93521fc40264304ddf789b
 
-Third part: f5af901a93521fc13a2f84120
 
-Recovered string: f5af901a93521fc40264304ddf789b13a2f84120
-]
+{
+Second part: 85acbd6d9397c81f480255427
+
+Third part: 7268f98d872b93ef480255427
+
+Recovered string: 7268f98d872b93e85acbd6d9397c81f480255427
+}
+
+
+
+{
+First part: 7268f98d872b93e85acbd6d9397c81
+
+Third part: 7268f98d872b93ef480255427
+
+Recovered string: 7268f98d872b93e85acbd6d9397c81f480255427
+}
+
+
+
+
+{
+First part: 7268f98d872b93e85acbd6d9397c81
+
+Third part: 7268f98d872b93ef480255427
+
+Recovered string: 7268f98d872b93e85acbd6d9397c81f480255427
+}
+
+
+
